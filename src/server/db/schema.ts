@@ -51,6 +51,7 @@ export const users = createTable("user", {
     mode: "date",
     withTimezone: true,
   }).default(sql`CURRENT_TIMESTAMP`),
+  password: varchar("password"),
   image: varchar("image", { length: 255 }),
 });
 
